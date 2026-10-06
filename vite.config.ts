@@ -8,6 +8,14 @@ export default defineConfig(() => {
     base: './',
     build: {
       outDir: 'docs',
+      emptyOutDir: true,
+      rollupOptions: {
+        output: {
+          entryFileNames: 'assets/bundle.js',
+          chunkFileNames: 'assets/[name].js',
+          assetFileNames: 'assets/[name].[ext]',
+        },
+      },
     },
     plugins: [react(), tailwindcss()],
     resolve: {
