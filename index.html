@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Automatic fallback for GitHub Pages root deployments:
+      // If raw root index.html is loaded on GitHub Pages, redirect to compiled /docs/
+      if (window.location.hostname.endsWith('github.io') && !window.location.pathname.includes('/docs')) {
+        var base = window.location.pathname.replace(/\/+$/, '');
+        window.location.replace(base + '/docs/' + window.location.search + window.location.hash);
+      }
+    </script>
     <title>Kaelen Vance — Creative Developer & Designer Portfolio</title>
     <meta name="description" content="Selected digital experiences, design systems, and creative engineering by Kaelen Vance. High-performance editorial portfolio and design journal." />
     <meta property="og:title" content="Kaelen Vance — Creative Developer & Designer Portfolio" />
@@ -14,8 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-Bz9ax-vq.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BrgKO76K.css">
+    <script type="module" crossorigin src="./assets/index-DUB2eN-p.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BYYspedg.css">
   </head>
   <body class="bg-[#0b0c0e] text-[#ededed] antialiased selection:bg-[#383a42] selection:text-white min-h-screen">
     <div id="root"></div>
