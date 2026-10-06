@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BlogPost } from '../types/portfolio';
 import { X, Plus, Check, Download, Edit3, Trash2, Eye, Sparkles } from 'lucide-react';
+import monoImage from '../assets/images/project_mono_studio_1791272151143.jpg';
 
 interface ContentManagerModalProps {
   isOpen: boolean;
@@ -81,7 +82,7 @@ export const ContentManagerModal: React.FC<ContentManagerModalProps> = ({
         publishedDate: 'Just Published',
         readTime: readTime || '4 min read',
         summary: summary || 'A new post published via Content Studio.',
-        heroImage: '/src/assets/images/project_mono_studio_1791272151143.jpg',
+        heroImage: monoImage,
         content: parsedParagraphs.length > 0 ? parsedParagraphs : ['New article draft.'],
         takeaways: parsedTakeaways.length > 0 ? parsedTakeaways : ['Key insight.'],
         featured: false,

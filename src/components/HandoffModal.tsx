@@ -128,6 +128,20 @@ export const HandoffModal: React.FC<HandoffModalProps> = ({ isOpen, onClose }) =
                       <li>Zero terminal commands required after initial 5-minute setup.</li>
                     </ol>
                   </div>
+
+                  <div className="p-4 rounded-lg bg-[#14161f] border border-[#10b981]/30 col-span-1 md:col-span-2">
+                    <span className="text-xs font-semibold text-[#10b981]">Method C (GitHub Pages: Zero Blank Screen Fixed)</span>
+                    <h5 className="font-semibold text-white mt-1">Deploying to GitHub Pages without White Screen</h5>
+                    <p className="text-xs text-[#8b8f9e] mt-1">
+                      <strong>Why other sites show a blank white page:</strong> Vite defaults to root path <code className="text-white">/</code>, so GitHub Pages repositories (<code className="text-white">username.github.io/repo/</code>) try to load scripts from the wrong domain root. We have permanently fixed this by setting <code className="text-white">base: './'</code> in <code className="text-white">vite.config.ts</code>, bundling all images as imports, adding <code className="text-white">.nojekyll</code>, and creating <code className="text-white">404.html</code> fallback.
+                    </p>
+                    <ol className="list-decimal list-inside text-xs text-[#8b8f9e] mt-2 space-y-1.5">
+                      <li>Run <code className="text-white bg-black/40 px-1 py-0.5 rounded">npm run build</code>.</li>
+                      <li>Go to GitHub repository &gt; <strong>Settings</strong> &gt; <strong>Pages</strong>.</li>
+                      <li>Select <strong>Deploy from a branch</strong> &gt; choose your branch (<code className="text-white">main</code> or <code className="text-white">gh-pages</code>) and set folder to <code className="text-white">/dist</code> or root.</li>
+                      <li>Your site opens instantly without any white blank screen!</li>
+                    </ol>
+                  </div>
                 </div>
               </div>
 

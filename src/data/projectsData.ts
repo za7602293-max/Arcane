@@ -1,4 +1,9 @@
 import { Project } from '../types/portfolio';
+import auraImage from '../assets/images/project_aura_brand_1791272106275.jpg';
+import nexusImage from '../assets/images/project_nexus_fintech_1791272125774.jpg';
+import monoImage from '../assets/images/project_mono_studio_1791272151143.jpg';
+import vantaImage from '../assets/images/project_vanta_commerce_1791272173019.jpg';
+import studioImage from '../assets/images/hero_creative_studio_1791272082227.jpg';
 
 export const initialProjects: Project[] = [
   {
@@ -12,7 +17,7 @@ export const initialProjects: Project[] = [
     role: 'Design Director & Creative Developer',
     timeline: '12 Weeks',
     liveUrl: 'https://aura.sample-experience.com',
-    image: '/src/assets/images/project_aura_brand_1791272106275.jpg',
+    image: auraImage,
     summary: 'A complete spatial identity redesign for an optical engineering studio, marrying chromatic refractive materials with real-time WebGL interactive light simulations.',
     challenge: 'Aura needed to shift from an academic physics laboratory identity to an international luxury design materials brand without compromising their scientific rigor.',
     approach: 'We developed an adaptive visual identity built around fluid chromatic refraction. The typography and generative grid respond dynamically to user cursor velocity and ambient scroll speed.',
@@ -49,7 +54,7 @@ export const initialProjects: Project[] = [
     role: 'Lead Product Designer & Frontend Architect',
     timeline: '16 Weeks',
     liveUrl: 'https://nexus.markets-sample.io',
-    image: '/src/assets/images/project_nexus_fintech_1791272125774.jpg',
+    image: nexusImage,
     summary: 'Restructured a high-frequency trading platform into an ergonomic, keyboard-driven interface with sub-10ms perceived latency and dense tabular clarity.',
     challenge: 'Traders were overwhelmed by visual noise and inconsistent typography across desktop monitors. The existing interface suffered from layout shifts during rapid orderbook updates.',
     approach: 'Created an uncompromising Swiss grid layout using tabular numerals, monochromatic hierarchy, and strict information density tiers tailored for dual-monitor workflows.',
@@ -86,7 +91,7 @@ export const initialProjects: Project[] = [
     role: 'Brand Designer & Full-Stack Developer',
     timeline: '8 Weeks',
     liveUrl: 'https://mono.foundry-sample.com',
-    image: '/src/assets/images/project_mono_studio_1791272151143.jpg',
+    image: monoImage,
     summary: 'An editorial-first digital specimen site for an independent type design studio, allowing visitors to type-test custom glyphs and preview tactile print layouts.',
     challenge: 'Conventional type foundry sites present rigid glyph waterfalls. Mono needed an immersive sandbox that demonstrated typefaces in real editorial context.',
     approach: 'Synthesized an interactive magazine experience featuring live glyph vector editing, kerning adjustments in-browser, and instant OpenType feature toggling.',
@@ -123,7 +128,7 @@ export const initialProjects: Project[] = [
     role: 'UX Architect & Creative Technologist',
     timeline: '10 Weeks',
     liveUrl: 'https://vanta.objects-sample.com',
-    image: '/src/assets/images/project_vanta_commerce_1791272173019.jpg',
+    image: vantaImage,
     summary: 'A stripped-down, high-fidelity checkout and product exploration experience for an architectural objects atelier with strict stock allocations.',
     challenge: 'The client hated conventional crowded e-commerce cards. They required an art gallery presentation while maintaining robust cart, inventory, and payment reliability.',
     approach: 'Stripped every non-essential UI element. Products are introduced through architectural scale photography, tactile sound feedback on interaction, and a streamlined 2-step checkout drawer.',
@@ -160,7 +165,7 @@ export const initialProjects: Project[] = [
     role: 'Principal Designer & Frontend Engineer',
     timeline: '10 Weeks',
     liveUrl: 'https://frame.architects-sample.no',
-    image: '/src/assets/images/hero_creative_studio_1791272082227.jpg',
+    image: studioImage,
     summary: 'A quiet, monumental digital archive of built work, blueprints, and material studies celebrating Nordic minimalism and natural daylight analysis.',
     challenge: 'Architectural photography files were massive (20MB+), leading to crippling load times on their previous legacy WordPress installation.',
     approach: 'Architected an automated multi-tier image pipeline converting CAD renders and photography into modern AVIF/WebP responsive sets, orchestrated with progressive blur-up placeholders.',

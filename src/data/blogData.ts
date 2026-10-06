@@ -1,4 +1,8 @@
 import { BlogPost } from '../types/portfolio';
+import monoImage from '../assets/images/project_mono_studio_1791272151143.jpg';
+import auraImage from '../assets/images/project_aura_brand_1791272106275.jpg';
+import studioImage from '../assets/images/hero_creative_studio_1791272082227.jpg';
+import vantaImage from '../assets/images/project_vanta_commerce_1791272173019.jpg';
 
 export const initialBlogPosts: BlogPost[] = [
   {
@@ -9,7 +13,7 @@ export const initialBlogPosts: BlogPost[] = [
     publishedDate: 'October 2025',
     readTime: '6 min read',
     summary: 'Why generic purple gradients and floating pill badges are destroying web personality—and how disciplined typography, authentic whitespace, and domain-native aesthetics restore human taste.',
-    heroImage: '/src/assets/images/project_mono_studio_1791272151143.jpg',
+    heroImage: monoImage,
     featured: true,
     takeaways: [
       'Stop relying on automated pill capsules for static metadata—use unboxed typographic hierarchy.',
@@ -32,7 +36,7 @@ export const initialBlogPosts: BlogPost[] = [
     publishedDate: 'September 2025',
     readTime: '5 min read',
     summary: 'Raw server response times are only half the battle. How physical spring damping, speculative hover prefetching, and sub-16ms render loops make web interfaces feel physical.',
-    heroImage: '/src/assets/images/project_aura_brand_1791272106275.jpg',
+    heroImage: auraImage,
     featured: false,
     takeaways: [
       'Felt latency is cognitive: a UI that starts moving in 10ms with spring physics feels faster than an instant layout snap.',
@@ -55,7 +59,7 @@ export const initialBlogPosts: BlogPost[] = [
     publishedDate: 'August 2025',
     readTime: '7 min read',
     summary: 'How to transition a traditional WordPress site to a blazing-fast React and TypeScript frontend without losing the ease of content publishing or paying for enterprise cloud hosting.',
-    heroImage: '/src/assets/images/hero_creative_studio_1791272082227.jpg',
+    heroImage: studioImage,
     featured: false,
     takeaways: [
       'You do not have to abandon WordPress as your content editor to get a bespoke, modern frontend.',
@@ -79,7 +83,7 @@ export const initialBlogPosts: BlogPost[] = [
     publishedDate: 'July 2025',
     readTime: '4 min read',
     summary: 'A deep dive into visual hierarchy: using 60% dominant neutral canvas, 30% structural surfaces, and 10% high-intent focal accents to direct recruiter and client attention.',
-    heroImage: '/src/assets/images/project_vanta_commerce_1791272173019.jpg',
+    heroImage: vantaImage,
     featured: false,
     takeaways: [
       '60% of your viewport should be uninterrupted neutral canvas (deep slate or crisp warm off-white).',

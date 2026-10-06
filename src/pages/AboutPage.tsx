@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageRoute } from '../types/portfolio';
 import { ArrowRight, Check, Compass, Terminal, Code2, Sparkles, Layers } from 'lucide-react';
+import studioImage from '../assets/images/hero_creative_studio_1791272082227.jpg';
 
 interface AboutPageProps {
   onRouteChange: (route: PageRoute) => void;
@@ -34,7 +35,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onRouteChange }) => {
         <div className="lg:col-span-5">
           <div className="rounded-2xl overflow-hidden border border-white/[0.1] bg-[#14161f] shadow-2xl relative">
             <img
-              src="/src/assets/images/hero_creative_studio_1791272082227.jpg"
+              src={studioImage}
               alt="Kaelen Vance studio workspace"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover aspect-[4/5]"
